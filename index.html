@@ -13,80 +13,95 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
     integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
     crossorigin="anonymous"></script>
-
   <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
   <header class="menu">
+    <a href="index.html">
+      <img class="logo" src="img/logo_americalatinatur.png">
+    </a>
     <h1 class="slogan">América Latina Tur</h1>
     <!--inicio navbar-->
-    <ul class="nav justify-content-center">
-      <li class="nav-item">
-        <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="destinos.html">Destinos</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="promocoes.html">Promoções</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="contato.html">Contato</a>
-      </li>
-    </ul>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <div class="container-fluid">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03"
+          aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="destinos.html">Destinos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="promocoes.html">Promoções</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contato.html">Contato</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
     <!--final navbar-->
   </header>
 
   <h2 class="title">Conheça a América Latina</h2>
 
-    <!--inicio carrossel-->
-  <div id="carouselExampleCaptions" class="carousel slide">
-    <div class="carousel-indicators">
-      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
-        aria-current="true" aria-label="Slide 1"></button>
-      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
-        aria-label="Slide 2"></button>
-      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
-        aria-label="Slide 3"></button>
-    </div>
-    <div class="carousel-inner" style="height: 80%;">
-      <div class="carousel-item active">
-        <img src="img/machu-picchu-5115599card.jpg" class="d-block w-100" alt="...">
-        <div class="carousel-caption d-none d-md-block">
-          <h5>Machu Pichu, no Peru</h5>
-        </div>
+  <!--inicio carrossel-->
+  <div class="carrossel"> 
+    <div id="carouselExampleCaptions" class="carousel slide">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+          aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+          aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+          aria-label="Slide 3"></button>
       </div>
-      <div class="carousel-item">
-        <img src="img/cartagena-179652.jpg" class="d-block w-100" alt="...">
-        <div class="carousel-caption d-none d-md-block">
-          <h5>Cartagena, na Colômbia</h5>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="img/machu-picchu-5115599card.jpg" class="d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Machu Pichu, no Peru</h5>
+          </div>
         </div>
-      </div>
-      <div class="carousel-item">
-        <img src="img/torres-del-paine-chile.jpg" class="d-block w-100" alt="...">
-        <div class="carousel-caption d-none d-md-block">
-          <h5>Torres del Paine, no Chile</h5>
+        <div class="carousel-item">
+          <img src="img/cartagena-179652.jpg" class="d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Cartagena, na Colômbia</h5>
+          </div>
         </div>
-      </div>
+        <div class="carousel-item">
+          <img src="img/torres-del-paine-chile.jpg" class="d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Torres del Paine, no Chile</h5>
+          </div>
+        </div>
 
-      <div class="carousel-item">
-        <img src="img/laguna-Bolivia-2099639.jpg" class="d-block w-100" alt="...">
-        <div class="carousel-caption d-none d-md-block">
-          <h5>Laguna Colorada, na Bolívia</h5>
+        <div class="carousel-item">
+          <img src="img/laguna-Bolivia-2099639.jpg" class="d-block w-50" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Laguna Colorada, na Bolívia</h5>
+          </div>
         </div>
       </div>
-    </div>
-    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Previous</span>
-    </button>
-    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
-      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Next</span>
-    </button>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+        data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+        data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
   </div>
-
+</div>
   <!--fim carrossel-->
 
   <h5 class="text-center">Destinos promocionais</h5>
@@ -153,6 +168,7 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.min.js"
     integrity="sha384-Rx+T1VzGupg4BHQYs2gCW9It+akI2MM/mndMCy36UVfodzcJcF0GGLxZIzObiEfa"
     crossorigin="anonymous"></script>
+  <script src="script.js"></script>
 </body>
 
 </html>

@@ -1,5 +1,6 @@
 * {
     font-family: Arial, Helvetica, sans-serif;
+    overflow-x: hidden;
 }
 
 
@@ -7,7 +8,8 @@
     display: flex;
     align-items: center;
     justify-content: space-around;
-    margin: 35px;
+    margin: 25px;
+    background-color:#F8F9FA;
 }
 
 
@@ -16,20 +18,32 @@
     padding: 20px 80px;
 }
 
+.logo {
+width: 150px;
+height: 150px;
+}
+
 
 .title {
     text-align: center;
     margin-top: 60px;
-    margin-bottom: 20px;
+    margin-bottom: 60px;
 }
 
 .text-center {
     margin: 20px 0 20px 0;
 }
 
+.carousel-inner, .carousel-item {
+  justify-content: center;
+  align-items: center;
+
+}
+
 
 .footer {
-    background: #e1d2a9;
+    background: #FF9060;
+    text-emphasis-color: white;
     height: 100px;
     display: flex;
     align-items: center;
@@ -37,3 +51,4 @@
     margin-top: 100px;
     font-size: 16px;
 }
+
